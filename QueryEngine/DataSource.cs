@@ -49,7 +49,7 @@ namespace QueryEngine
                     {
                         new User("adamlat2@poczta.pl", "Adam Małysz", 44),
                         new User("lukaszkowalski@gmail.com", "Łukasz Kowalski", 34),
-                        new User("michalkichal@onet.pl", "Michał Kichała", 17)
+                        new User("michalkichal@onet.pl", "Michal Kichala", 17)
                     }
                 );
            

@@ -31,8 +31,13 @@ namespace QueryEngine
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var wholeString = string.Empty;
             var queryEngine = new Engine.Engine();
-            DataSourceTextBlock.Text = queryEngine.Compute(QueryTextBox.Text, dataSource);
+            foreach (var item in queryEngine.EngineStart(QueryTextBox.Text, dataSource))
+            {
+                wholeString = wholeString + item + "\n";
+            }
+            DataSourceTextBlock.Text = wholeString;
         }
     }
 }
