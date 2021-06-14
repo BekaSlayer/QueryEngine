@@ -24,5 +24,10 @@ namespace QueryEngine
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DataSourceTextBlock.Text = QueryTextBox.Text;
+        }
     }
 }
