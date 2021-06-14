@@ -20,14 +20,19 @@ namespace QueryEngine
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        DataSource dataSource;
         public MainWindow()
         {
+            var data = new Data();
+            dataSource = data.GenerateSomeData();
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DataSourceTextBlock.Text = QueryTextBox.Text;
+            var queryEngine = new Engine.Engine();
+            DataSourceTextBlock.Text = queryEngine.Compute(QueryTextBox.Text, dataSource);
         }
     }
 }
