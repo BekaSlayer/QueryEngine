@@ -7,10 +7,41 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Compute" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="110" RenderTransformOrigin="0.239,-0.457" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="139" Margin="29,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="733" Name="QueryTextBox"/>
-        <TextBlock HorizontalAlignment="Left" Height="131" Margin="29,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="733" Name="DataSourceTextBlock"/>
-        <Label Content="Query:" HorizontalAlignment="Left" Margin="29,13,0,0" VerticalAlignment="Top" Width="72"/>
-        <Label Content="Data:" HorizontalAlignment="Left" Height="32" Margin="29,235,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button 
+            Content="Compute" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Height="35" 
+            Width="110" 
+            RenderTransformOrigin="0.239,-0.457" 
+            Click="Button_Click"/>
+        <TextBox 
+            HorizontalAlignment="Left" 
+            Height="139" 
+            Margin="29,39,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="733"
+            Name="QueryTextBox"/>
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            Height="131" 
+            Margin="29,272,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="733" 
+            Name="DataSourceTextBlock"/>
+        <Label 
+            Content="Query:" 
+            HorizontalAlignment="Left" 
+            Margin="29,13,0,0" 
+            VerticalAlignment="Top" 
+            Width="72"/>
+        <Label 
+            Content="Data:" 
+            HorizontalAlignment="Left" 
+            Height="32" Margin="29,235,0,0"
+            VerticalAlignment="Top" 
+            Width="111"/>
     </Grid>
 </Window>
